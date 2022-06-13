@@ -1,6 +1,7 @@
 # GetResponse
 
-A chrome extension demo for get special web page's http/s response content/body
+A chrome extension demo for get special web page's http/s response content/body    
+use XMLHttpRequest and fetch.
 
 - download all code.         
 - please replace "yourweb" in manifest.json.    
