@@ -1,12 +1,12 @@
 {
   "name": "GetResponse",
   "version": "0.0.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "A chrome extension for get http/s's response",
   "content_scripts": [
     {
       "matches": [
-        "*://*.yourweb.com/*"
+        "*://*.yoururl.com/*"
       ],
       "js": [
         "./content.js"
@@ -15,5 +15,8 @@
       "all_frames": true
     }
   ],
-  "web_accessible_resources": ["injected.js"]
+  "web_accessible_resources": [{
+    "resources": ["injected.js"],
+    "matches": ["<all_urls>"]
+  }]
 }
